@@ -5,6 +5,7 @@
 	Ethereal by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 */
 
 html, body, div, span, applet, object,
@@ -3686,4 +3687,105 @@ input, select, textarea {
 				transform: none;
 			}
 
-	}
+	}/* =========================
+   GLOBAL RESPONSIVE FIX
+   ========================= */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 16px; /* base size, scales with screen if needed */
+}
+
+#wrapper, #page-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.panel, .panel .content, .panel .image, .inner, .intro, .gallery, .grid-icons, .columns {
+  width: 100% !important;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.panel .image img, .gallery img {
+  width: 100%;
+  height: auto;
+}
+.panel, .panel .content, .panel .image, .inner, .intro, .gallery, .grid-icons, .columns {
+  width: 100% !important;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.panel .image img, .gallery img {
+  width: 100%;
+  height: auto;
+}
+/* Small devices (phones, 0-767px) */
+@media screen and (max-width: 767px) {
+  .span-1, .span-1-25, .span-1-5, .span-2, .span-2-25, .span-3, .span-3-25, .span-4-5, .span-7, .span-5 {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  nav a {
+    font-size: 1rem !important;
+    margin-left: 10px !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: calc(1em + 1vw) !important; /* scales with viewport */
+  }
+
+  p {
+    font-size: calc(0.85em + 0.3vw) !important;
+  }
+
+  .actions {
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+
+  .actions .button {
+    width: 100% !important;
+    max-width: 200px !important;
+    margin: 0.25rem 0;
+  }
+}
+
+/* Medium devices (tablets, 768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .span-1, .span-1-25, .span-1-5, .span-2, .span-2-25, .span-3, .span-3-25, .span-4-5, .span-7, .span-5 {
+    width: 100% !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: calc(1em + 0.8vw) !important;
+  }
+
+  p {
+    font-size: calc(0.9em + 0.3vw) !important;
+  }
+}
+.copyright {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.gallery a, .gallery img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.grid-icons li, .icons li, .contact-icons li {
+  display: inline-block;
+  margin: 0.25rem;
+}
