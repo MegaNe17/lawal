@@ -3707,12 +3707,7 @@ input, select, textarea {
     box-sizing: border-box;
 }
 
-/* Make images responsive */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+
 
 
 
