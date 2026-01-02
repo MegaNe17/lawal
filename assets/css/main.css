@@ -3686,4 +3686,18 @@ input, select, textarea {
 				transform: none;
 			}
 
-	}
+	}#header > .container {
+    min-height: 20vh; /* 20% of viewport height */
+    padding: 1rem;
+}
+#header h1 {
+    position: relative; /* no absolute */
+    font-size: clamp(1.5rem, 5vw, 2.75rem);
+    margin-bottom: 0.5rem;
+}
+#header nav a {
+    margin-left: 1.5rem;
+    font-size: clamp(1rem, 3vw, 1.4rem);
+}
+
+
