@@ -3789,3 +3789,53 @@ html, body {
   display: inline-block;
   margin: 0.25rem;
 }
+/* Make all main containers scale */
+#wrapper, #page-wrapper, .panel, .content, .inner {
+    width: 100%;
+    max-width: 1200px; /* optional max for desktops */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}@media screen and (max-width: 768px) {
+    #header, .panel, .inner {
+        padding: 0 1rem;
+    }
+
+    #header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #header nav {
+        position: relative;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .gallery .group, .gallery > a {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+#header > .container {
+    min-height: 20vh; /* 20% of viewport height */
+    padding: 1rem;
+}
+#header h1 {
+    position: relative; /* no absolute */
+    font-size: clamp(1.5rem, 5vw, 2.75rem);
+    margin-bottom: 0.5rem;
+}
+#header nav a {
+    margin-left: 1.5rem;
+    font-size: clamp(1rem, 3vw, 1.4rem);
+}
+
+
