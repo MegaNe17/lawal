@@ -3699,5 +3699,21 @@ input, select, textarea {
     margin-left: 1.5rem;
     font-size: clamp(1rem, 3vw, 1.4rem);
 }
+/* Make all main containers scale */
+#wrapper, #page-wrapper, .panel, .content, .inner {
+    width: 100%;
+    max-width: 1200px; /* optional max for desktops */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 
 
