@@ -3686,4 +3686,27 @@ input, select, textarea {
 				transform: none;
 			}
 
-	}
+	}@media screen and (max-width: 768px) {
+    #header, .panel, .inner {
+        padding: 0 1rem;
+    }
+
+    #header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #header nav {
+        position: relative;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .gallery .group, .gallery > a {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+
